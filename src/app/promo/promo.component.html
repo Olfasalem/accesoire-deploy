@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Liste des Produits</h2>
+
+      <div class="card-deck">
+        <div class="card" *ngFor="let produit of produits">
+          <img [src]="produit.image" class="card-img-top" alt="{{ produit.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ produit.name }}</h5>
+            <p class="card-text">{{ produit.desc }}</p>
+            <p class="card-text"><span style="color: red;">Prix: {{ produit.prix }}</span> avec un promo {{produit.pourcentage}}  donc <span style="color: green;">Prix = {{produit.prixneuv}}  </span> </p>
+          </div>
+          <a href="#" class="btn btn-primary">Acheter</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

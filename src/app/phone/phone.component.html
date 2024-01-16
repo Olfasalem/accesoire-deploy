@@ -1,0 +1,11 @@
+<br>
+<h2>Mes Produits = Phone</h2>
+<ul class="list-group" >
+  <div class="row">
+    <div class="col-md-3" *ngFor="let p of phone; index as i">
+      <li class="list-group-item">
+        <app-card [Name]="p.name" [Desc]="p.desc" [Prix]="p.prix" [Image]="p.image"></app-card>
+      </li>
+    </div>
+  </div>
+</ul>

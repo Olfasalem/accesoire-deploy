@@ -1,0 +1,11 @@
+<br>
+<h2>Mes Produits = gaming</h2>
+<ul class="list-group" >
+  <div class="row">
+    <div class="col-md-3" *ngFor="let produit of games; index as i">
+      <li class="list-group-item">
+        <app-card [Name]="produit.name" [Desc]="produit.desc" [Prix]="produit.prix" [Image]="produit.image"></app-card>
+      </li>
+    </div>
+  </div>
+</ul>
